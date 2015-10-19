@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}    
+    <meta name="description" content="Contact information for Terrible Tom's Trinkets, a purveyor of trinkets so terrible you have to buy them." />    
+    <title>Terrible Tom's Trinkets | Contact Us</title>      
+</head>
+
+<body>
+    <div class="container">
+        {% include header.html %}
+        {% include nav.html %}
+        <div class="jumbotron">
+            <img src="images/header-contact.jpg" alt="man writing while wearing a watch" class="img-responsive">
+            <h1>Contact Us</h1>
+            <p class="text-center"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></p>
+        </div>
+        <div class="row">
+        <h1>Contact Us</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <form id="comment_form" name="comment_form" method="post" action="../cgi-bin/form_script.pl" class="form-horizontal">        
+                    <input type=hidden name="recipient" value="webdevteacher@gmail.com">        
+                    <input type="hidden" id="redirect" name="redirect" value="http://student054.webdev.seminolestate.edu/confirmation.shtm" />
+                    <input type="hidden" id="subject" name="subject" value="Terrible Tom's Trinkets comment form" />
+                   
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label">Name:</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="name" name="name" placeholder="Your name" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">E-mail:</label>
+                        <div class="col-sm-10">
+                            <input type="email" id="email" name="email" placeholder="Your e-mail address" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comments" class="col-sm-2 control-label">Comments:</label><br />
+                        <div class="col-sm-10">
+                            <textarea id="comments" name="comments" cols="50" rows="5" placeholder="Add your comments here." class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>            
+                </form> 
+            </div>
+            <div class="col-md-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Email Address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Company President</td>
+                            <td><a href="mailto:john.doe@example.com">john.doe@example.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>Vice President</td>
+                            <td><a href="mailto:jane.doe@example.com">jane.doe@example.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>James Smith</td>
+                            <td>Chief Financial Officer</td>
+                            <td><a href="mailto:james.smith@example.com">james.smith@example.com</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>
+    {% include footer.html %}
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <script src="js/validate.js"></script>
+</body>
+
+</html>
