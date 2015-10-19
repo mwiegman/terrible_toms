@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+    <meta name="description" content="Terrible Tom's Trinkets, a purveyor of trinkets so terrible you have to buy them." />    
+    <title>Terrible Tom's Trinkets | Home</title> 
+</head>
+
+<body>
+    <div class="container">
+        {% include header.html %}
+        {% include nav.html %}
+        <div id="NewsAndSales" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#NewsAndSales" data-slide-to="0" class="active"></li>
+                <li data-target="#NewsAndSales" data-slide-to="1"></li>
+                <li data-target="#NewsAndSales" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <a href="jewelry.shtm">
+                        <img src="images/carousel2.jpg" alt="red beaded necklace" width="1200" height="600" class="img-responsive grayscale">
+                        <div class="carousel-caption">
+                            <h1>All necklaces buy 1, get 1 20% off!</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="watches.shtm">
+                        <img src="images/carousel1.jpg" alt="men's watch" width="1200" height="600" class="img-responsive grayscale">
+                        <div class="carousel-caption">
+                            <h1>Custom men's watches available now</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="jewelry.shtm">
+                          <img src="images/carousel4.jpg" alt="engagement ring" width="1200" height="600" class="img-responsive grayscale">
+                          <div class="carousel-caption caption-top-left">
+                              <h1>Engagement rings 30% off!</h1>
+                          </div>         
+                    </a>      
+                </div>
+            </div>
+            <a class="carousel-control left" href="#NewsAndSales" role="button" data-slide="prev">
+                <span class="icon-prev" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control right" href="#NewsAndSales" role="button" data-slide="next">
+                <span class="icon-next" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+                <a href="jewelry.shtm"><img src="images/necklace2.jpg" alt="woman with necklace" width="300" height="300" class="img-responsive img-thumbnail grayscale">
+                    <p>Fine Jewelry</p>
+                </a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="watches.shtm"><img src="images/watch5.jpg" alt="man with watch and flowers" width="300" height="300" class="img-responsive img-thumbnail grayscale">
+                    <p>Men's Watches</p>
+                </a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="about.shtm"><img src="images/hands.jpg" alt="clasped hands with rings" width="300" height="300" class="img-responsive img-thumbnail grayscale">
+                    <p>Our Story</p>
+                </a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="contact.shtm"><img src="images/watch4.jpg" alt="man writing with watch" width="300" height="300" class="img-responsive img-thumbnail grayscale">
+                    <p>Contact Us</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>
