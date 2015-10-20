@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,11 +25,8 @@
         </div>
         <div class="row">
             <div class="col-md-7">
-                <form id="comment_form" name="comment_form" method="post" action="../cgi-bin/form_script.pl" class="form-horizontal">        
-                    <input type=hidden name="recipient" value="webdevteacher@gmail.com">        
-                    <input type="hidden" id="redirect" name="redirect" value="http://student054.webdev.seminolestate.edu/confirmation.shtm" />
-                    <input type="hidden" id="subject" name="subject" value="Terrible Tom's Trinkets comment form" />
-                   
+                <form id="comment_form" name="comment_form" method="POST" action="//formspree.io/meredith.wiegman@gmail.com" class="form-horizontal">
+                    <input type="hidden" name="_next" value="confirmation.html" />
                     <div class="form-group">
                         <label for="name" class="col-sm-2 control-label">Name:</label>
                         <div class="col-sm-10">

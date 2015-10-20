@@ -1,8 +1,2 @@
-name: ""
-description: ""
+baseurl: /terrible_toms
 
-baseurl: ""
-
-paginate: 10
-
-permalink: pretty 

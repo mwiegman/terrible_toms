@@ -43,7 +43,7 @@ $mailprog = '/usr/sbin/sendmail -i -t';
 # be sent to.  This must be filled in correctly to prevent SPAM and allow    #
 # valid addresses to receive e-mail.  Read the documentation to find out how #
 # this variable works!!!  It is EXTREMELY IMPORTANT.                         #
-@recipients = ('^webdevteacher\@gmail\.com');
+@recipients = ('^meredith\.wiegman\@gmail\.com');
 
 # ACCESS CONTROL FIX: Peter D. Thompson Yezek                                #
 # @valid_ENV allows the sysadmin to define what environment variables can    #
