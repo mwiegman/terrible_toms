@@ -12,6 +12,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <meta name="author" content="Meredith Wiegman" />
 <meta name="robots" content="index" />
 <meta name="DCTERMS.rightsHolder" content="Terrible Tom's Trinkets" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" />    
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
